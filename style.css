@@ -1,0 +1,366 @@
+/*
+  Stylesheet for New Beginning Baptist Church website
+  The palette draws from warm golden tones to reflect
+  hope and joy (inspired by the hero image) and uses
+  clean typography to enhance readability.
+*/
+
+/* Root variables for easy theming */
+:root {
+  --primary-color: #e2a600;
+  --secondary-color: #6b4d2a;
+  --background-color: #fffef8;
+  --text-color: #333333;
+  --heading-font: 'Nunito', sans-serif;
+  --body-font: 'Nunito', sans-serif;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5em;
+  color: var(--secondary-color);
+}
+p {
+  margin-bottom: 1em;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #d59700;
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #583c20;
+}
+
+/* Header */
+.site-header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+}
+.logo .tagline {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.25em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background-image: url('hero.png');
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+}
+
+/* Section generic */
+.section {
+  padding: 3em 0;
+}
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.section p {
+  max-width: 750px;
+  margin: 0.5em auto 1em auto;
+  text-align: center;
+}
+
+/* Visit Section */
+.visit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+.visit-item h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5em;
+}
+.service-times li {
+  margin-bottom: 0.5em;
+  list-style-type: none;
+}
+.service-times strong {
+  color: var(--secondary-color);
+}
+
+/* Ministries Section */
+.ministries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+.ministry-card {
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  padding: 1.5em;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease;
+  height: 100%;
+}
+.ministry-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.ministry-card h3 {
+  margin-bottom: 0.5em;
+}
+.ministry-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75em;
+}
+.link {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Sermons Section */
+.sermon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+.sermon-card {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  padding: 1.5em;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+.sermon-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.sermon-thumbnail {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+.sermon-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75em;
+}
+.more-sermons {
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* Events Section */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+.event-item {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  padding: 1.5em;
+  transition: box-shadow 0.2s ease;
+}
+.event-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.event-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+.more-events {
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* Contact Section */
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-form {
+  margin-top: 2em;
+  text-align: left;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.form-group {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.25em;
+}
+.form-group input,
+.form-group textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: var(--body-font);
+}
+.contact-form button {
+  margin-top: 1em;
+  border: none;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ececec;
+  padding: 2em 0 1em;
+  font-size: 0.9rem;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
+}
+.footer-info h3,
+.footer-links h3 {
+  margin-bottom: 0.5em;
+}
+.footer-info p {
+  margin-bottom: 0.4em;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links li {
+  margin-bottom: 0.4em;
+}
+.footer-links a {
+  color: var(--secondary-color);
+}
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
