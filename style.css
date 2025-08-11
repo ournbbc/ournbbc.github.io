@@ -364,3 +364,28 @@ nav a:hover {
     font-size: 1rem;
   }
 }
+
+/* ----------------------------------------------------------- */
+/* Custom overrides to control text alignment
+ *
+ * By default, paragraphs inside sections are centered via the
+ * `.section p` rule above.  To left‑align text in the “Plan
+ * Your Visit” section and to provide a reusable utility class
+ * for other content, the following rules override that default.
+ */
+
+/* Left‑align all paragraphs within the #visit section */
+#visit p {
+  max-width: 750px;
+  margin: 0.5em 0 1em 0;
+  text-align: left;
+}
+
+/* Utility class for left‑aligned text; use on elements
+ * to force left alignment regardless of the parent’s rules */
+.left-align {
+  text-align: left !important;
+  /* Remove auto margins that cause centering */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
