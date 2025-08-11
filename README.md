@@ -79,7 +79,7 @@
                 </div>
                 <div class="visit-item">
                     <h3>Location</h3>
-                    <p>75 Farabee Drive<br>Bardstown, KY 40004</p>
+                    <p>200 Clermont Drive<br>Bardstown, KY 40004</p>
                     <p><a href="https://www.google.com/maps/search/?api=1&query=75%20Farabee%20Drive%2C%20Bardstown%2C%20KY%2040004" target="_blank" class="btn btn-secondary">Get Directions</a></p>
                 </div>
                 <div class="visit-item">
