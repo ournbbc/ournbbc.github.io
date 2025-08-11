@@ -47,8 +47,16 @@ It replaces the old "75 Farabee Drive" address with the correct "200 Clermont 
   <p>200 Clermont Dr, Bardstown, KY 40004</p>
   <p><a href="https://www.google.com/maps/search/?api=1&query=200%20Clermont%20Dr%20Bardstown%20KY%2040004" target="_blank">Get Directions</a></p>
   <h3>What to Expect</h3>
-  <p>Come as you are! Our services include worship music, teaching from the Bible and prayer. We have a friendly, family‑like atmosphere. Children are welcome – we offer nursery and kids’ church.</p>
-  <p>If you have questions before you visit, feel free to contact us – we’d be happy to hear from you.</p>
+  <p class="left-align">
+  Come as you are! Our services include worship music, teaching from the Bible and prayer. 
+  We have a friendly, family‑like atmosphere. Children are welcome – we offer nursery 
+  and kids’ church.
+</p>
+<p class="left-align">
+  If you have questions before you visit, feel free to contact us – we’d be happy 
+  to hear from you.
+</p>
+
 </section>
 
 <!-- Ministries Section -->
